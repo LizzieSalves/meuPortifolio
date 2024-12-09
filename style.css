@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat;
+    color: #320505;
+    
+}
+
+body{
+    background-color: #FDF3E9;
+}
+
+
+/* ----------------------------------- Topo-lilais -------------------------------------*/
+aside{
+    background-color: #C2C0E6;
+    width: 100%;
+    height: 35px;
+    align-content: center;
+    
+    
+}
+
+.container-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topo-redes{
+    display: flex;
+    padding: 0px;
+    width: auto;
+  
+}
+
+.topo-redes figure{
+   
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    
+}
+
+
+.topo-texto {
+    display: flex;
+    justify-items: center;
+    justify-self: center;
+}
+
+.topo-texto h6{
+    margin: 0px;
+    font: Montserrat;
+    font-weight: 255;
+}
+
+
+.icon-cafe{
+    display: flex;
+    margin: 0px;
+    justify-content: end;
+    width: auto;
+}
+/* fim topo-lilais */
+
+/*------------------------------------ Nav ---------------------------------- */
+.container-nav{
+    background-color: #F7E6DE;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+.link-nav{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 65px;  
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+   display: flex;
+    
+}
+
+.logo h3{
+    margin: 0px;
+}
+
+.container-li{
+    display: flex;
+    list-style: none;
+}
+
+.nav-item a {
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+button{
+    background-color: #00000000;
+    border: none;
+}
+
+/* ~ -------------------- Home -------------------------- */
+.inicio{
+    background-image: url(/src/papel.png);   
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-inicio{
+    display: flex;
+    width: 76%;
+    height: 70%;
+    
+}
+
+.fotografia{
+    background-color: #C2C0E6;
+    width: 30%;
+    height: auto;
+    border-radius: 100px;
+}
+
+.conteiner-texto{
+    width: 80%;
+    align-self: center;
+    padding: 30px;
+}
+
+.hello{
+    width: 100%;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.hello:hover{
+    width: 100%;
+    font-size: 50px;
+}
+
+.conteiner-texto p{
+    font-size: 20px;
+}
+
+
+
+.text-vc{
+    color: #FF9D00; 
+    font-size: 20px;
+    font-weight: bold; 
+    font-style: italic; 
+    text-decoration: underline;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.text-vc:hover{
+    font-size: 30px;
+}
+
+.ini-btn{
+    background-color: #EFBCA7;
+    width: 30%;
+    height: 40px;
+    border-radius: 15px;
+    font-weight: 600;
+    transition: font-size 0.3s ease-in-out;
+    transition: width 0.10s ease-in-out;
+    transition: height 0.10s ease-in-out;
+}
+
+.ini-btn:hover{
+    background-color: #EEB178;
+    width: 30%;
+    height: 45px;
+    border-radius: 15px;
+    font-weight: 800;
+    font-size: 15px;
+    transition: width 0.10s ease-in-out;
+    transition: height 0.10s ease-in-out;
+}
+
+
+
+/* ^ ------------------------------------- RESPONSIVO----------------------------- */
+ /* telas com largura máxima de 540px - responsivo para telas menores que 540 */
+
+ /* * topo lilais */
+ @media (max-width: 540px) {
+   
+    aside{
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+       
+    }
+
+    .container-info{
+        width: 100%;
+        justify-content: center;
+        justify-self: center;
+     }
+
+    .topo-redes{
+        width: auto;
+
+    }
+
+
+    .icon-cafe{
+        display: ;
+        width: auto;
+        padding: 0px;
+
+    }
+ 
+    .topo-texto{
+        padding: 0px;
+    }
+
+    .topo-texto h6{
+        justify-self: center;
+        justify-content: center;
+        justify-items: center;
+    }
+   
+}
+
+@media (max-width: 640px) {
+   
+    aside{
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        justify-items: flex-start;
+    }
+
+    .container-info{
+        width: 100%;
+        justify-content: center;
+        justify-self: center;
+     }
+
+    .topo-redes{
+        display: none;
+    }
+   
+
+    .icon-cafe{
+        display: none;
+    
+    }
+
+ 
+    .topo-texto{
+       width: 100%;
+    }
+
+    .topo-texto h6{
+        font-size: 15px;
+        justify-self: center;
+        
+    }
+   
+}
+
+/* * Nav ---- finalizar*/
+@media (max-width: 768px) {
+
+    .container-nav{
+        display: flex;
+
+    }
+    .link-nav{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 50px;
+        
+    }
+
+    .container-li{
+        display: none;
+    }
+
+   .logo {
+       display: flex;
+       height: 50px;
+       margin-right: 20%;
+       align-content: center;
+        align-items: center;
+        
+    }
+    
+  
+    
+    .hamburguer{
+        display: flex;
+        height: 50px;
+        margin-left: 15%;
+        align-items: center;
+    
+    }
+
+    .hamburguer img{
+        display: flex;
+        width: auto;
+        height: 20px;
+        
+    }
+   
+}
+
+@media (min-width: 768px) {
+    
+    .hamburguer{
+        display: none;
+    }
+
+    .hamburguer img{
+        
+        
+        
+    }
+   
+}
+
+
+/* * Conteudo do inicio */
+/*@media (max-width: 768px) {
+    .conteiner-inicio{
+        width: 85%;
+    }
+
+    .conteiner-texto{
+        width: 60%;
+    }
+
+    .ini-btn{
+        width: 55%;
+    }
+    
+    .fotografia{
+        width: 40%;
+    }
+}
