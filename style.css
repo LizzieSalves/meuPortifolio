@@ -115,33 +115,45 @@ button{
 
 /* ~ -------------------- Home -------------------------- */
 .inicio{
-    background-image: url(/src/papel.png);   
+    background-image: url(/src/papel.png);  
     width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 450px; 
+    justify-items: center;
+    padding-top: 25px;
 }
 
 .conteiner-inicio{
-    display: flex;
-    width: 76%;
-    height: 70%;
-    
+  display: flex;
+  width: 75%;
+  height: 400px;
+  align-items: center;
+
 }
 
-.fotografia{
-    background-color: #C2C0E6;
+.fotografia {
     width: 30%;
-    height: auto;
-    border-radius: 100px;
+    height: 100%;
+    justify-items: center;
+    align-content: center;
+ }
+
+ .fotografia img{
+    width: 100%;
+    border-radius: 50px;
+ }
+
+ 
+.conteiner-texto{
+    width: 65%;
+    padding-left: 20px;
+   
 }
 
-.conteiner-texto{
-    width: 80%;
-    align-self: center;
-    padding: 30px;
+.ini-text{
+    /* background-color: #EEB178;  */
+    width: auto;
 }
+
 
 .hello{
     width: 100%;
@@ -153,7 +165,14 @@ button{
     font-size: 50px;
 }
 
-.conteiner-texto p{
+.conteiner-texto hr{
+    width: auto;
+}
+
+.apresentacao h2{
+    font-size: 25px;
+}
+.apresentacao p{
     font-size: 20px;
 }
 
@@ -174,7 +193,7 @@ button{
 
 .ini-btn{
     background-color: #EFBCA7;
-    width: 30%;
+    width: 35%;
     height: 40px;
     border-radius: 15px;
     font-weight: 600;
@@ -185,7 +204,7 @@ button{
 
 .ini-btn:hover{
     background-color: #EEB178;
-    width: 30%;
+    width: 35%;
     height: 45px;
     border-radius: 15px;
     font-weight: 800;
@@ -341,20 +360,140 @@ button{
 
 
 /* * Conteudo do inicio */
-/*@media (max-width: 768px) {
+
+@media (max-width: 650px) {
+
     .conteiner-inicio{
-        width: 85%;
-    }
+       display: block;
+       width: 0%;
 
-    .conteiner-texto{
-        width: 60%;
-    }
-
-    .ini-btn{
-        width: 55%;
     }
     
     .fotografia{
+      width: 50% !important;
+      height: 300px;
+    }
+
+    .ini-btn{
+        width: 20%;
+    }
+}
+
+@media (max-width: 750px) {
+
+    
+    .fotografia{
+      width: 100%;
+      height: 300px;
+    }
+
+    .ini-btn{
+        width: 20%;
+    }
+
+    .hello{
+        font-size: 15px;
+    }
+
+    .frase-ini{
+        font-size: 6px;
+    }
+
+    .apresentacao{
+        font-size: 10px ;
+    }
+
+    .ini-btn{
+        width: 50px;
+    }
+}
+
+
+
+
+@media (max-width: 890px) {
+
+    .inicio{
+        height: 100%;
+    }
+    .conteiner-inicio{
+        justify-items: center;
+        height: 100% ;
+        
+    }
+
+   
+
+    .hello{
+        
+        font-size: 1px;
+    }
+    
+    .apresentacao {
+       font-size: 20px;
+    }
+
+    .frase-ini{
+        font-size: 20px;
+    }
+
+    .fotografia{
+        width: 40%;
+    }
+
+    .ini-btn{
+        width: 60% !important;
+    }
+}
+
+@media (max-width: 870px) {
+
+    .conteiner-inicio{
+        width: 80%;
+    }
+    .fotografia{
+        width: 35%;
+    }
+
+   
+    .hello{
+        font-size: 30px;
+    }
+ 
+    
+    .apresentacao{
+       font-size: 19px !important;
+    }
+
+    .frase-ini{
+        font-size: 15px !important;
+    }
+
+    .ini-btn{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1070px) {
+
+    .conteiner-inicio{
+        width: 80%;
+    }
+    .fotografia{
+        width: 30%;
+    }
+
+  
+    .apresentacao{
+       font-size: 24px;
+    }
+
+    .frase-ini{
+        font-size: 20px;
+    }
+
+    .ini-btn{
         width: 40%;
     }
 }
